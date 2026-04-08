@@ -1,8 +1,8 @@
 # Hyperledger Fabric: Building a Private Blockchain
 
 This repository contains the experiment script used in the article  
-**"Hyperledger Fabric: Building a Private Blockchain"**  
-published in Open Source For You (OSFY) Magazine.
+"Hyperledger Fabric: Building a Private Blockchain"
+submitted to Open Source For You (OSFY) Magazine.
 
 ## What This Does
 
