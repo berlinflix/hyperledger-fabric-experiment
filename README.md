@@ -27,3 +27,15 @@ cd ~
 curl -sSLO https://raw.githubusercontent.com/hyperledger/fabric/main/scripts/install-fabric.sh
 chmod +x install-fabric.sh
 ./install-fabric.sh docker samples binary
+
+Start the network and deploy chaincode:
+cd ~/fabric-samples/test-network
+./network.sh down
+./network.sh up createChannel -c mychannel -ca
+./network.sh deployCC -ccn basic \
+  -ccp ../asset-transfer-basic/chaincode-javascript \
+  -ccl javascript
+
+Run the Experiment
+bash /mnt/c/Users/<your-username>/experiment.sh
+
